@@ -1,0 +1,303 @@
+.celebrations-page .hero {
+    background: url("Image/Celebrations.jpg") center 48% / cover no-repeat;
+}
+
+.celebrations-page .section-heading {
+    max-width: 860px;
+}
+
+.celebrations-page .section-heading h2 {
+    color: var(--dark);
+}
+
+.celebration-intro {
+    padding-bottom: 60px;
+}
+
+.celebration-intro .section-heading {
+    margin-bottom: 0;
+}
+
+.celebration-intro .section-heading > p:last-child {
+    max-width: 760px;
+    color: var(--muted);
+}
+
+.celebration-feature {
+    padding: 72px 24px;
+    background: #ffffff;
+}
+
+.celebration-feature__inner,
+.regatta-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: center;
+    gap: 52px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.celebration-image,
+.regatta-image {
+    position: relative;
+    min-width: 0;
+    min-height: 360px;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(242, 184, 75, 0.55);
+    border-radius: 10px;
+    background: #d8e1ec;
+    box-shadow: 0 12px 28px rgba(17, 42, 76, 0.12);
+}
+
+.celebration-image img,
+.regatta-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.celebration-image:hover img,
+.regatta-image:hover img {
+    transform: scale(1.035);
+}
+
+.celebration-image figcaption,
+.regatta-image figcaption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 35px 20px 17px;
+    background: linear-gradient(transparent, rgba(8, 28, 62, 0.86));
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.celebration-feature__content .kicker,
+.regatta-content .kicker {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.celebration-feature__content h2,
+.regatta-content h2 {
+    margin: 0 0 16px;
+    color: var(--dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.12;
+}
+
+.celebration-feature__content > p,
+.regatta-content > p {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.celebration-fact {
+    display: grid;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 16px 18px;
+    border-left: 4px solid var(--secondary);
+    border-radius: 0 7px 7px 0;
+    background: linear-gradient(145deg, #163d6d, var(--dark));
+}
+
+.celebration-fact strong {
+    color: var(--secondary);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.celebration-fact span {
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.celebration-feature__content .hero-btn {
+    margin-top: 20px;
+}
+
+.city-events {
+    padding-top: 76px;
+    padding-bottom: 76px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 22px;
+}
+
+.event-card {
+    min-width: 0;
+    padding: 25px;
+    border: 1px solid rgba(242, 184, 75, 0.38);
+    border-top: 3px solid var(--secondary);
+    border-radius: 10px;
+    background: linear-gradient(150deg, #173f70, var(--dark) 75%);
+    box-shadow: 0 8px 22px rgba(17, 42, 76, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(17, 42, 76, 0.15);
+}
+
+.event-card__date {
+    display: inline-flex;
+    margin-bottom: 12px;
+    padding: 5px 10px;
+    border: 1px solid rgba(242, 184, 75, 0.58);
+    border-radius: 999px;
+    background: rgba(242, 184, 75, 0.12);
+    color: #ffd274;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.event-card h3 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.event-card p {
+    margin: 0 0 13px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.event-card .celebration-fact {
+    margin-top: 17px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.event-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 17px;
+    color: #ffd274;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.event-link:hover {
+    color: #ffffff;
+}
+
+.regatta-section {
+    padding: 72px 24px;
+    background: #e8eef6;
+}
+
+.regatta-image img {
+    object-position: center 55%;
+}
+
+.regatta-content .event-link {
+    color: var(--primary);
+}
+
+.regatta-content .event-link:hover {
+    color: var(--dark);
+}
+
+.celebrations-page .closing-section {
+    background:
+        linear-gradient(rgba(8, 28, 62, 0.9), rgba(8, 28, 62, 0.9)),
+        url("Image/Celebrations.jpg") center / cover no-repeat;
+}
+
+.event-card {
+    border-color: var(--border);
+    border-top: 3px solid var(--secondary);
+    background: #FFFFFF;
+}
+
+.event-card__date {
+    border-color: rgba(242, 184, 75, 0.75);
+    background: #fff7e6;
+    color: var(--dark);
+}
+
+.event-card h3 {
+    color: var(--dark);
+}
+
+.event-card p {
+    color: #53657b;
+}
+
+.event-card .celebration-fact {
+    background: linear-gradient(145deg, #163d6d, var(--dark));
+}
+
+.regatta-section {
+    background: #FFFFFF;
+}
+
+@media (max-width: 850px) {
+    .celebration-feature__inner,
+    .regatta-inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .celebration-image,
+    .regatta-image {
+        min-height: 300px;
+    }
+
+    .celebration-image img,
+    .regatta-image img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    .celebration-feature,
+    .regatta-section {
+        padding: 56px 18px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .celebration-image,
+    .regatta-image {
+        min-height: 260px;
+    }
+
+    .celebration-image img,
+    .regatta-image img {
+        height: 290px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .celebration-image img,
+    .regatta-image img,
+    .event-card {
+        transition: none;
+    }
+}

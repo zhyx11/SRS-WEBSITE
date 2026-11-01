@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Zamboanga City's history, Fort Pilar, and other landmarks connected with the city's cultural heritage.">
+    <title>History &amp; Landmarks | Zamboanga Cultural Guide</title>
+    <link rel="stylesheet" href="History.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="interactions.css">
+    <script src="interactions.js" defer></script>
+    <script src="history.js" defer></script>
+</head>
+<body>
+    <header class="topbar" id="home">
+        <div class="nav-container">
+            <a class="brand" href="index.html">
+                <img src="Image/zm%20city%20logo.jpg" alt="Zamboanga City logo">
+                <span>
+                    Zamboanga Cultural Guide
+                    <small>Stories • Heritage • Identity</small>
+                </span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="#timeline" aria-current="page">History</a>
+                <a href="#fort-pilar">Fort Pilar</a>
+                <a href="#other-landmarks">Other Landmarks</a>
+                <a href="tradition.html">Traditions</a>
+                <a href="celebrations.html">Celebrations</a>
+                <a href="community.html">Community</a>
+                <a href="#gallery">Gallery</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-controls="navLinks" aria-expanded="false">
+                <span aria-hidden="true">☰</span> Menu
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Landmarks • Memory • Heritage</p>
+                <h1>Stories in Our <span>Landmarks.</span></h1>
+                <p>
+                    Discover the coastal heritage, colonial history, and
+                    cultural diversity reflected in Zamboanga City's historic
+                    places and communities.
+                </p>
+                <a class="primary-btn" href="#timeline">Explore the history <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+
+        <section class="section" id="overview" aria-labelledby="overview-title">
+            <div class="section-heading">
+                <p class="section-label">A city shaped by history</p>
+                <h2 id="overview-title">Understanding Our Roots</h2>
+                <p>
+                    Zamboanga City is a historic coastal city in southwestern
+                    Mindanao. Its identity was shaped by maritime trade,
+                    indigenous communities, Spanish colonization, and the
+                    traditions of different cultural groups. Its landmarks
+                    tell stories of the city's development, struggles,
+                    religion, government, and cultural heritage.
+                </p>
+            </div>
+
+            <div class="overview-grid">
+                <article class="info-card">
+                    <div class="info-icon" aria-hidden="true">🌊</div>
+                    <h3>A Coastal Community</h3>
+                    <p>
+                        Zamboanga's coastline and waters facing the Sulu Sea
+                        have made the sea an important part of everyday life,
+                        livelihood, transportation, and cultural traditions.
+                    </p>
+                    <h4>Life by the sea</h4>
+                    <p>
+                        Sama, Badjao, and other coastal communities have
+                        longstanding connections to fishing, trading, and
+                        maritime transportation. The coastal environment also
+                        supports local seafood and industries.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="info-icon" aria-hidden="true">🏛️</div>
+                    <h3>Colonial History</h3>
+                    <p>
+                        Before Spanish colonization, Zamboanga was inhabited
+                        by indigenous and maritime communities, including
+                        Subanen and Sama. Tausug and other Muslim communities
+                        also contributed to the region's history and trade
+                        networks.
+                    </p>
+                    <p>
+                        Spanish expansion brought military administration,
+                        Christianity, colonial architecture, and new cultural
+                        influences, while local communities continued to
+                        preserve their own languages, beliefs, and traditions.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="info-icon" aria-hidden="true">🤝</div>
+                    <h3>Cultural Diversity</h3>
+                    <p>
+                        Zamboanga's history reflects interaction among
+                        indigenous groups, Muslim communities, Spanish
+                        colonizers, and other settlers. Communities that
+                        contribute to the city's cultural life include:
+                    </p>
+                    <ul>
+                        <li><strong>Chavacano:</strong> a Spanish-based creole language and an important part of local identity.</li>
+                        <li><strong>Tausug:</strong> a Muslim community with distinct traditions and cultural practices.</li>
+                        <li><strong>Sama and Badjao:</strong> communities with maritime and coastal connections.</li>
+                        <li><strong>Yakan:</strong> known for weaving and craftsmanship.</li>
+                        <li><strong>Subanen:</strong> an indigenous community with distinct languages and practices.</li>
+                    </ul>
+                    <p>
+                        Together, these communities contribute to the city's
+                        languages, food, architecture, religion, festivals,
+                        music, and traditional arts.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline-section" id="timeline" aria-labelledby="timeline-title">
+            <div class="section-heading">
+                <p class="section-label">Important events</p>
+                <h2 id="timeline-title">A Journey Through Time</h2>
+                <p>
+                    Selected milestones offer a view of Zamboanga's history
+                    and the changing role of its historic fort.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-year">Before 1635</div>
+                    <div class="timeline-content">
+                        <h3>Local Communities and Maritime Life</h3>
+                        <p>
+                            Before Spanish rule, Zamboanga was home to Subanen,
+                            Sama, Badjao, Tausug, and other communities.
+                            Fishing, farming, maritime transportation, and
+                            barter trade connected people with neighboring
+                            islands and traders.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">1635</div>
+                    <div class="timeline-content">
+                        <h3>Spanish Presence and Fort Pilar</h3>
+                        <p>
+                            Spanish missionaries established a brief Catholic
+                            mission at La Caldera, now known as Recodo.
+                            Spanish authorities also established a military
+                            presence and built Fuerza de San José, later known
+                            as Fort Pilar, as a strategic outpost in the region.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">1646</div>
+                    <div class="timeline-content">
+                        <h3>Dutch Attack</h3>
+                        <p>
+                            The fort was attacked by Dutch forces during a
+                            period when European colonial powers competed for
+                            influence in the region.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">1663</div>
+                    <div class="timeline-content">
+                        <h3>Period of Abandonment</h3>
+                        <p>
+                            Spanish troops left the fort to reinforce military
+                            forces in Manila against Chinese pirate attacks.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">1666–1719</div>
+                    <div class="timeline-content">
+                        <h3>Rebuilding and Reconstruction</h3>
+                        <p>
+                            The fort was reconstructed by the Society of Jesus
+                            in 1666 and rebuilt under Juan Sicarra in 1719,
+                            restoring its military importance.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">1720–1898</div>
+                    <div class="timeline-content">
+                        <h3>Continued Military Use</h3>
+                        <p>
+                            Fort Pilar experienced further attacks, including
+                            an assault by Dalasi, King of Bulig, in 1720, and
+                            British bombardment in 1798. It continued to serve
+                            as a Spanish military stronghold until the end of
+                            Spanish rule.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">1899–1946</div>
+                    <div class="timeline-content">
+                        <h3>American and Japanese Periods</h3>
+                        <p>
+                            Spanish authority ended in 1899. The Americans
+                            took control of the fort, followed by Japanese
+                            occupation during World War II. The Republic of
+                            the Philippines took it over in July 1946.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-year">1973–Present</div>
+                    <div class="timeline-content">
+                        <h3>Recognition and Preservation</h3>
+                        <p>
+                            Fort Pilar was declared a National Cultural
+                            Treasure in 1973. Restoration works began in the
+                            1980s, and the site became home to the National
+                            Museum of the Philippines–Zamboanga.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="recognition-section" aria-labelledby="recognition-title">
+            <div class="section-heading">
+                <p class="section-label">Protecting cultural heritage</p>
+                <h2 id="recognition-title">Recognition of Zamboanga's Heritage</h2>
+                <p>
+                    Historical and cultural properties preserve important
+                    records of the city's past and help future generations
+                    understand its development.
+                </p>
+            </div>
+            <div class="recognition-grid">
+                <article class="recognition-card">
+                    <strong>1973</strong>
+                    <p>Fort Pilar was declared a National Cultural Treasure through Presidential Decree No. 260.</p>
+                </article>
+                <article class="recognition-card">
+                    <strong>1969</strong>
+                    <p>Zamboanga City Hall received a historical marker from the National Historical Commission of the Philippines.</p>
+                </article>
+                <article class="recognition-card">
+                    <strong>1992</strong>
+                    <p>Taluksangay Mosque received a historical marker from the National Historical Commission of the Philippines.</p>
+                </article>
+                <article class="recognition-card">
+                    <strong>2021</strong>
+                    <p>The city government presented heritage properties in its Centennial Treasures of Zamboanga City exhibition.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="fort-section" id="fort-pilar" aria-labelledby="fort-title">
+            <div class="fort-grid">
+                <figure class="fort-image">
+                    <img src="Image/FORT%20PILLAR.jpg" alt="Fort Pilar in Zamboanga City" loading="lazy">
+                    <figcaption class="image-caption">A landmark connected to Zamboanga's history</figcaption>
+                </figure>
+
+                <div class="fort-content">
+                    <p class="section-label">A landmark of heritage</p>
+                    <h2 id="fort-title">Discover Fort Pilar</h2>
+                    <p>
+                        Real Fuerza de Nuestra Señora del Pilar de Zaragoza,
+                        commonly known as Fort Pilar, is one of Zamboanga
+                        City's best-known historical landmarks. The Spanish-era
+                        military fortress was built in 1635 under the
+                        supervision of Jesuit priest-engineer Father Melchor
+                        de Vera.
+                    </p>
+                    <p>
+                        It was originally constructed to defend the Spanish
+                        settlement and strengthen Spanish military control in
+                        Mindanao. Today, Fort Pilar serves as a historical
+                        museum and religious destination. Its eastern wall is
+                        associated with the outdoor shrine of Our Lady of the
+                        Pillar, where Catholic devotees gather to pray and
+                        offer candles.
+                    </p>
+                    <p class="fort-location"><strong>Location:</strong> N.S. Valderosa Street, Barangay Zone IV, Zamboanga City.</p>
+
+                    <div class="fort-facts">
+                        <div>
+                            <strong>1635</strong>
+                            <span>Established during the Spanish period</span>
+                        </div>
+                        <div>
+                            <strong>Heritage</strong>
+                            <span>Fort, museum, and religious destination</span>
+                        </div>
+                    </div>
+
+                    <h3>Why Fort Pilar matters</h3>
+                    <ul class="fort-significance">
+                        <li>Represents the Spanish colonial history of Zamboanga.</li>
+                        <li>Witnessed centuries of military conflicts and political changes.</li>
+                        <li>Preserves historical artifacts and cultural collections through the National Museum.</li>
+                        <li>Serves as an important Catholic pilgrimage destination.</li>
+                        <li>Symbolizes the city's historical and cultural identity.</li>
+                    </ul>
+                    <a class="primary-btn" href="https://www.nationalmuseum.gov.ph/" target="_blank" rel="noopener noreferrer">
+                        Visit the National Museum <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-landmarks-section" id="other-landmarks" aria-labelledby="landmarks-title">
+            <div class="other-landmarks-inner">
+                <div class="section-heading">
+                    <p class="section-label">Places that tell our story</p>
+                    <h2 id="landmarks-title">Other Historical Landmarks of Zamboanga City</h2>
+                    <p>
+                        Beyond Fort Pilar, these places reflect the city's
+                        religious heritage, civic development, public life,
+                        recreation, and military history.
+                    </p>
+                </div>
+
+                <div class="landmark-grid">
+                    <article class="landmark-card landmark-card--image">
+                        <img src="Image/Taluksangay Mosque.jpg" alt="Taluksangay Mosque in Zamboanga City" loading="lazy">
+                        <div class="landmark-card__content">
+                            <span class="landmark-number" aria-hidden="true">01</span>
+                            <h3>Taluksangay Mosque</h3>
+                            <p>
+                                Built in 1885 by Hadji Abdullah Maas Nuno, the
+                                mosque is an important place of Islamic worship
+                                and regional heritage. It became an important
+                                center for Islamic learning and religious
+                                activities and is recognized as the first mosque
+                                in the Zamboanga Peninsula.
+                            </p>
+                            <p class="landmark-location"><strong>Location:</strong> Barangay Taluksangay, Zamboanga City.</p>
+                        </div>
+                    </article>
+
+                    <article class="landmark-card landmark-card--image">
+                        <img src="Image/History.jpg" alt="Historic civic building and plaza in Zamboanga City" loading="lazy">
+                        <div class="landmark-card__content">
+                            <span class="landmark-number" aria-hidden="true">02</span>
+                            <h3>Zamboanga City Hall</h3>
+                            <p>
+                                A historic government building associated
+                                with civic and administrative development.
+                                It was constructed between 1905 and 1907
+                                during the American colonial period. It served
+                                as the seat of government of the Moro Province
+                                and later as an administrative center for the
+                                Department of Mindanao and Sulu and Zamboanga
+                                Province.
+                            </p>
+                            <p class="landmark-location"><strong>Location:</strong> N.S. Valderosa Street, Barangay Zone IV, Zamboanga City.</p>
+                        </div>
+                    </article>
+
+                    <article class="landmark-card landmark-card--image">
+                        <img src="Image/plaza.jpg" alt="Plaza Pershing in downtown Zamboanga City" loading="lazy">
+                        <div class="landmark-card__content">
+                            <span class="landmark-number" aria-hidden="true">03</span>
+                            <h3>Plaza Pershing</h3>
+                            <p>
+                                A downtown public plaza associated with the
+                                city's development during the American period.
+                                It was originally established during the Spanish
+                                period as Plaza de Don Juan de Salcedo, then
+                                renamed in honor of General John J. Pershing,
+                                governor of the Moro Province.
+                            </p>
+                            <p class="landmark-location"><strong>Location:</strong> Downtown Zamboanga City, near City Hall and Plaza Rizal.</p>
+                        </div>
+                    </article>
+
+                    <article class="landmark-card landmark-card--image">
+                        <img src="Image/Pasonanca park.jpg" alt="Pasonanca Park in Zamboanga City" loading="lazy">
+                        <div class="landmark-card__content">
+                            <span class="landmark-number" aria-hidden="true">04</span>
+                            <h3>Pasonanca Park</h3>
+                            <p>
+                                A public recreational and natural attraction.
+                                Its development began around 1912 under General
+                                John J. Pershing during the American
+                                administration. Thomas Hanley prepared its
+                                original layout; the park includes gardens,
+                                swimming pools, an aviary, and other recreational
+                                facilities.
+                            </p>
+                            <p class="landmark-location"><strong>Location:</strong> Barangay Pasonanca, Zamboanga City.</p>
+                        </div>
+                    </article>
+
+                    <article class="landmark-card landmark-card--image">
+                        <img src="Image/pettit barracks.jpg" alt="Pettit Barracks historic site in Zamboanga City" loading="lazy">
+                        <div class="landmark-card__content">
+                            <span class="landmark-number" aria-hidden="true">05</span>
+                            <h3>Pettit Barracks</h3>
+                            <p>
+                                A historic military site associated with the
+                                American military presence and named after
+                                Colonel James S. Pettit. Japanese forces occupied
+                                the site during World War II from 1942 to 1945;
+                                its historic entrance portal and remaining
+                                structures preserve memories of the city's
+                                military history.
+                            </p>
+                            <p class="landmark-location"><strong>Location:</strong> Pettit Barracks area, Zamboanga City.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section summary-section" aria-labelledby="summary-title">
+            <div class="section-heading">
+                <p class="section-label">At a glance</p>
+                <h2 id="summary-title">Historical Landmarks of Zamboanga City</h2>
+                <p>A quick guide to the landmarks and the history they represent.</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Landmark</th>
+                            <th scope="col">Historical importance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Fort Pilar</th><td>Spanish colonial military fortress and National Cultural Treasure.</td></tr>
+                        <tr><th scope="row">Taluksangay Mosque</th><td>Important center of Islamic history and worship.</td></tr>
+                        <tr><th scope="row">Zamboanga City Hall</th><td>Historic government building associated with civic development.</td></tr>
+                        <tr><th scope="row">Plaza Pershing</th><td>Historic public plaza from the Spanish and American periods.</td></tr>
+                        <tr><th scope="row">Pasonanca Park</th><td>American-era recreational and environmental landmark.</td></tr>
+                        <tr><th scope="row">Pettit Barracks</th><td>Historic American military site and World War II heritage.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+            <div class="section-heading">
+                <p class="section-label">See our heritage</p>
+                <h2 id="gallery-title">History in Pictures</h2>
+                <p>
+                    Images from the guide connect visitors with the city's
+                    landmarks, cultural expressions, and coastal heritage.
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-card">
+                    <img src="Image/FORT%20PILLAR.jpg" alt="Fort Pilar historical site" loading="lazy">
+                    <figcaption>
+                        <h3>Fort Pilar</h3>
+                        <p>A major historical and cultural landmark.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="Image/History.jpg" alt="Historic building and public plaza in Zamboanga City" loading="lazy">
+                    <figcaption>
+                        <h3>Historic Civic Landscape</h3>
+                        <p>Historic buildings and public spaces form part of the city's shared memory.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="Image/Celebrations.jpg" alt="Colorful vintas on the water" loading="lazy">
+                    <figcaption>
+                        <h3>Coastal Connections</h3>
+                        <p>Vintas reflect the region's maritime heritage and cultural identity.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="Image/Traditions.jpg" alt="Colorful woven textiles and local crafts" loading="lazy">
+                    <figcaption>
+                        <h3>Living Heritage</h3>
+                        <p>Traditional crafts and textiles carry creative knowledge across generations.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="closing-section">
+            <div class="closing-content">
+                <p class="section-label">Preserving our identity</p>
+                <h2>Our History Is Part of Who We Are</h2>
+                <p>
+                    Zamboanga's landmarks preserve traces of Spanish
+                    colonization, American administration, Islamic traditions,
+                    indigenous heritage, and the city's development through
+                    time. Protecting these places helps younger generations
+                    understand their roots, appreciate cultural differences,
+                    and take pride in their city's history.
+                </p>
+                <a href="index.html#explore" class="primary-btn">Return to the culture guide <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <section class="site-footer__about" aria-label="About this guide">
+                <a class="site-footer__brand" href="index.html#home">
+                    <img src="Image/zm%20city%20logo.jpg" alt="Zamboanga City logo">
+                    <span>Zamboanga Cultural Guide<small>Stories • Heritage • Identity</small></span>
+                </a>
+                <p class="site-footer__description">A student-made guide to the culture, history, and living traditions of Zamboanga City.</p>
+            </section>
+            <section aria-label="Project information">
+                <h2 class="site-footer__heading">Project</h2>
+                <p class="site-footer__details">Web Programming Project<br>BS Information Technology<br>Zamboanga City, Philippines</p>
+            </section>
+            <nav aria-label="Explore more" class="site-footer__navigation">
+                <h2 class="site-footer__heading">Explore more</h2>
+                <div class="site-footer__links">
+                    <a href="index.html#explore">Culture Guide</a>
+                    <a href="tradition.html">Traditions</a>
+                    <a href="celebrations.html">Celebrations</a>
+                    <a href="community.html">Community</a>
+                    <a href="local%20food.html">Local Food</a>
+                    <a href="language.html">Chavacano</a>
+                </div>
+            </nav>
+        </div>
+        <div class="site-footer__bottom">&copy; 2026 Zamboanga Cultural Guide.</div>
+    </footer>
+</body>
+</html>

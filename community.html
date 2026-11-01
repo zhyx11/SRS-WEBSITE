@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community and Cultural Identity | Zamboanga Cultural Guide</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #F3F6FA;
+            color: #172B46;
+            line-height: 1.7;
+        }
+        a { color: inherit; text-decoration: none; }
+        header {
+            background: #1557A6;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .brand { font-size: 20px; font-weight: bold; }
+        nav { display: flex; gap: 22px; flex-wrap: wrap; }
+        nav a { font-size: 14px; }
+        nav a:hover { color: #F2B84B; }
+        .hero {
+            min-height: 390px;
+            padding: 90px 8%;
+            color: white;
+            background: linear-gradient(90deg, rgba(8,28,62,.9), rgba(12,50,98,.55)),
+            url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=85") center/cover;
+            display: flex;
+            align-items: center;
+        }
+        .hero-content { max-width: 750px; }
+        .eyebrow {
+            color: #F2B84B;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(40px, 6vw, 65px);
+            line-height: 1.1;
+            margin: 15px 0;
+        }
+        .hero p { max-width: 650px; color: #e5edf7; }
+        .container { max-width: 1100px; margin: auto; padding: 65px 25px; }
+        .section-title { margin-bottom: 25px; }
+        .section-title span {
+            color: #1557A6;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            line-height: 1.2;
+            margin: 8px 0 15px;
+        }
+        h3 { font-family: Georgia, serif; font-size: 25px; margin-bottom: 10px; }
+        p { margin-bottom: 14px; }
+        .intro { font-size: 16px; max-width: 850px; color: #53657c; }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .content-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(17,42,76,.08);
+        }
+        .content-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-content { padding: 25px; }
+        .tag {
+            color: #1557A6;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .highlight {
+            background: #E8EEF6;
+            border-left: 5px solid #F2B84B;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .highlight strong { color: #1557A6; }
+        .principles { display: grid; gap: 15px; margin-top: 25px; }
+        .principle {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            border-left: 4px solid #1557A6;
+        }
+        .principle h3 { font-size: 21px; }
+        .sources {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .sources a {
+            color: #1557A6;
+            text-decoration: underline;
+            overflow-wrap: anywhere;
+        }
+        .sources li { margin: 10px 0 10px 20px; }
+        footer {
+            background: #102C50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 13px;
+        }
+        @media(max-width: 700px) {
+            header { flex-direction: column; align-items: flex-start; }
+            nav { gap: 13px; }
+            .content-grid { grid-template-columns: 1fr; }
+            .hero { padding: 65px 7%; }
+            h2 { font-size: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a class="brand" href="index.html">Zamboanga Cultural Guide</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tradition.html">Traditions</a>
+        <a href="community.html">Community</a>
+        <a href="History.html">History</a>
+        <a href="language.html">Language</a>
+        <a href="local food.html">Local Food</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="eyebrow">People • Identity • Belonging</div>
+            <h1>Our Community, Our Identity</h1>
+            <p>
+                Get to know the people, cultural identities, and shared experiences
+                that contribute to the diverse character of Zamboanga City.
+            </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-title">
+            <span>Understanding our community</span>
+            <h2>A city shaped by different people and cultures</h2>
+        </div>
+        <p class="intro">
+            A community is made up of people who share places, experiences,
+            relationships, and responsibilities. Zamboanga City is home to
+            different cultural and religious communities. Their languages,
+            histories, livelihoods, and cultural expressions contribute to
+            the city's identity.
+        </p>
+        <div class="highlight">
+            <strong>One city, many identities</strong>
+            <p>
+                Understanding Zamboanga means recognizing that its residents
+                do not all have the same background or cultural practices.
+                Each community has its own history and identity, and these
+                differences deserve recognition and respect.
+            </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-title">
+            <span>Cultural communities</span>
+            <h2>Different identities, shared spaces</h2>
+        </div>
+
+        <div class="content-grid">
+            <article class="content-card">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cfade277a?auto=format&fit=crop&w=1000&q=85"
+                     alt="Writing and language materials">
+                <div class="card-content">
+                    <div class="tag">Language and identity</div>
+                    <h3>Chavacano-speaking Community</h3>
+                    <p>
+                        Chavacano is an important part of Zamboanga City's
+                        linguistic and cultural identity. It is used in everyday
+                        communication and is connected to the city's history
+                        and experiences.
+                    </p>
+                    <p>
+                        Promoting its use through conversation, literature,
+                        education, and creative expression helps support its
+                        continued transmission to younger generations.
+                    </p>
+                </div>
+            </article>
+
+            <article class="content-card">
+                <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=1000&q=85"
+                     alt="Handcrafted textile and creative work">
+                <div class="card-content">
+                    <div class="tag">Indigenous artistry</div>
+                    <h3>Yakan and Other Bangsamoro Communities</h3>
+                    <p>
+                        Yakan communities are recognized for their weaving
+                        traditions and cultural practices. Traditional textiles
+                        are expressions of craftsmanship, knowledge, and
+                        cultural identity.
+                    </p>
+                    <p>
+                        The wider Zamboanga Peninsula is also home to other
+                        Bangsamoro communities whose cultural practices and
+                        histories contribute to the region's heritage.
+                    </p>
+                </div>
+            </article>
+
+            <article class="content-card">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1000&q=85"
+                     alt="People gathered together">
+                <div class="card-content">
+                    <div class="tag">Community life</div>
+                    <h3>Families and Local Communities</h3>
+                    <p>
+                        Families, neighborhoods, schools, and local organizations
+                        are important parts of community life. They provide
+                        spaces where people build relationships, share
+                        experiences, and support one another.
+                    </p>
+                </div>
+            </article>
+
+            <article class="content-card">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=85"
+                     alt="People working together in a community">
+                <div class="card-content">
+                    <div class="tag">Cooperation and respect</div>
+                    <h3>Living Together</h3>
+                    <p>
+                        People from different backgrounds share public spaces,
+                        workplaces, schools, and community activities.
+                        Understanding differences and communicating respectfully
+                        can help strengthen relationships.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="section-title">
+            <span>Community values</span>
+            <h2>Building respect and understanding</h2>
+        </div>
+
+        <p class="intro">
+            Cultural understanding begins with recognizing that people have
+            different experiences, beliefs, and ways of life. Respectful
+            interaction helps create a community where people can learn from
+            one another without judging or stereotyping others.
+        </p>
+
+        <div class="principles">
+            <div class="principle">
+                <h3>1. Respect cultural differences</h3>
+                <p>
+                    Recognize that cultural practices may differ between
+                    communities. Avoid assuming that one group's customs
+                    represent everyone.
+                </p>
+            </div>
+
+            <div class="principle">
+                <h3>2. Listen and learn</h3>
+                <p>
+                    Listen to people when they share their experiences.
+                    Learn about cultural practices from reliable sources
+                    and, when appropriate, from community members themselves.
+                </p>
+            </div>
+
+            <div class="principle">
+                <h3>3. Respect cultural expressions</h3>
+                <p>
+                    Traditional clothing, textiles, designs, music, and
+                    other cultural expressions may carry specific meanings.
+                    Understand their significance instead of treating
+                    them only as decorations.
+                </p>
+            </div>
+
+            <div class="principle">
+                <h3>4. Support cultural preservation</h3>
+                <p>
+                    Support responsible cultural education, local artisans,
+                    community programs, and efforts to preserve languages
+                    and traditional knowledge.
+                </p>
+            </div>
+
+            <div class="principle">
+                <h3>5. Practice consideration</h3>
+                <p>
+                    Ask permission before taking photographs of people or
+                    private cultural activities. Follow the guidance of
+                    community members when visiting cultural spaces.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="highlight">
+            <strong>Our shared responsibility</strong>
+            <p>
+                Preserving cultural identity is not only about remembering
+                the past. It also involves respecting the people who continue
+                to practice, teach, and protect their cultural heritage today.
+                Every community deserves to represent its own stories and
+                traditions.
+            </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="sources">
+            <h2>References and Further Reading</h2>
+            <p>Explore these sources for more information about Zamboanga's communities and cultural identity.</p>
+            <ul>
+                <li>
+                    <a href="https://pia.gov.ph/news/national-heritage-month-celebrates-cultural-unity-community-stories-in-zamboanga/"
+                       target="_blank" rel="noopener">
+                        Philippine Information Agency – National Heritage Month
+                        Celebrates Cultural Unity and Community Stories in Zamboanga
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pia.gov.ph/news/zamboanga-celebrates-14th-chavacano-foundation-day-with-call-to-preserve-cultural-identity/"
+                       target="_blank" rel="noopener">
+                        Philippine Information Agency – Chavacano Foundation Day
+                        and Cultural Identity
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pia.gov.ph/news/zamboanga-showcases-culture-calls-for-awareness-to-counter-inauthentic-narratives/"
+                       target="_blank" rel="noopener">
+                        Philippine Information Agency – Zamboanga Showcases Culture
+                        and Indigenous Textiles
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pia.gov.ph/news/reviving-tradition-creating-opportunities-subanen-handloom-initiative/"
+                       target="_blank" rel="noopener">
+                        Philippine Information Agency – Subanen Handloom Initiative
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Zamboanga Cultural Guide | Stories • Heritage • Identity</p>
+    <p>Web Programming Final Project</p>
+</footer>
+
+</body>
+</html>

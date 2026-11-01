@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the traditions, food, language, and heritage of Zamboanga City.">
+    <title>Zamboanga Cultural Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="interactions.css">
+    <script src="interactions.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="topbar" id="home">
+        <div class="nav-wrap">
+            <a class="brand" href="#home">
+                <img class="brand-logo" src="Image/zm%20city%20logo.jpg" alt="Zamboanga City logo">
+                <span>
+                    Zamboanga Cultural Guide
+                    <small>Stories • Heritage • Identity</small>
+                </span>
+            </a>
+
+            <details class="site-menu">
+                <summary aria-controls="site-menu-panel">Explore guide</summary>
+                <nav class="site-menu__panel" id="site-menu-panel" aria-label="Main navigation">
+                    <a href="#home">Home</a>
+                    <a href="tradition.html">Traditions &amp; Crafts</a>
+                    <a href="celebrations.html">Celebrations</a>
+                    <a href="community.html">Community</a>
+                    <a href="local%20food.html">Local Food</a>
+                    <a href="language.html">Chavacano Language</a>
+                    <a href="History.html">History &amp; Heritage</a>
+                    <a href="#about">About This Guide</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-inner">
+                <div class="culture-tools" aria-label="Find a culture topic">
+                    <label class="culture-search">
+                        <span class="visually-hidden">Search culture topics</span>
+                        <input id="culture-search" type="search" placeholder="Search festivals, food, places..." autocomplete="off">
+                    </label>
+                    <div class="culture-filters" role="group" aria-label="Filter culture topics">
+                        <button class="culture-filter is-active" type="button" data-filter="all" aria-pressed="true">All topics</button>
+                        <button class="culture-filter" type="button" data-filter="celebrations" aria-pressed="false">Celebrations</button>
+                        <button class="culture-filter" type="button" data-filter="food" aria-pressed="false">Food</button>
+                        <button class="culture-filter" type="button" data-filter="language" aria-pressed="false">Language</button>
+                        <button class="culture-filter" type="button" data-filter="heritage" aria-pressed="false">History</button>
+                        <button class="culture-filter" type="button" data-filter="traditions" aria-pressed="false">Traditions</button>
+                        <button class="culture-filter" type="button" data-filter="community" aria-pressed="false">Community</button>
+                    </div>
+                    <p class="culture-results visually-hidden" id="culture-results" aria-live="polite"></p>
+                </div>
+
+                <div class="hero-content">
+                    <p class="eyebrow">A city of history</p>
+
+                    <h1>
+                        Discover the soul of
+                        <em>Zamboanga City.</em>
+                    </h1>
+
+                    <p class="hero-copy">
+                        Explore the traditions, flavors, languages, and landmarks
+                        that make our city unique. A little guide to understanding
+                        and appreciating the cultural heritage of Zamboanga City.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="primary-btn" href="#explore">
+                            Explore Guide ↗
+                        </a>
+
+                        <a class="secondary-btn" href="#heritage">
+                            Our heritage
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section class="stats" aria-label="Guide highlights">
+            <div class="stat-bar">
+                <div class="stat">
+                    <strong>Culture</strong>
+                    <span>Stories passed through generations</span>
+                </div>
+
+                <div class="stat">
+                    <strong>Community</strong>
+                    <span>Many voices, shared one home</span>
+                </div>
+
+                <div class="stat">
+                    <strong>Heritage</strong>
+                    <span>A legacy worth understanding</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cinematic Welcome Section: introduction before the culture cards -->
+        <section class="welcome-video" aria-labelledby="welcome-title">
+            <div class="welcome-video__fallback" aria-hidden="true"></div>
+            <div class="welcome-video__media" aria-hidden="true">
+                <video
+                    class="welcome-video__video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    poster="Image/Celebrations.jpg"
+                    aria-hidden="true"
+                >
+                    <source src="Image/Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="welcome-video__shade" aria-hidden="true"></div>
+
+            <div class="welcome-video__content">
+                <p class="welcome-video__label">BIENVENIDOS A ZAMBOANGA</p>
+                <h2 id="welcome-title">
+                    Discover the Beauty of <span>Zamboanga City</span>
+                </h2>
+                <p class="welcome-video__description">
+                    The city of Zamboanga is known for its rich cultural
+                    heritage, shaped by its diverse communities, traditions,
+                    and history. This heritage is reflected in the city's
+                    festivals, traditional food, languages, customs, historical
+                    landmarks, and other cultural practices that have been
+                    passed down through generations. Cultural and historical
+                    attractions across the Zamboanga Peninsula also demonstrate
+                    the region's diverse heritage and places of interest. These
+                    cultural elements contribute to the identity of Zamboanga
+                    City and provide residents and visitors with opportunities
+                    to learn about and appreciate its heritage.
+                </p>
+                <a class="welcome-video__button" href="#explore">
+                    Explore Our Culture <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Explore Culture -->
+        <section class="section" id="explore" aria-labelledby="explore-title">
+            <div class="section-heading">
+                <div>
+                    <p class="kicker">Explore the guide</p>
+                    <h2 id="explore-title">Zamboanga Cultural Guide: Understanding Local Culture and Traditions</h2>
+                </div>
+
+                <p id="explore-description">
+                    The city of Zamboanga is known for its rich cultural
+                    heritage, shaped by its diverse communities, traditions,
+                    and history. This heritage is reflected in the city's
+                    festivals, traditional food, languages, customs, historical
+                    landmarks, and other cultural practices that have been
+                    passed down through generations. Cultural and historical
+                    attractions across the Zamboanga Peninsula also demonstrate
+                    the region's diverse heritage and places of interest. These
+                    cultural elements contribute to the identity of Zamboanga
+                    City and provide residents and visitors with opportunities
+                    to learn about and appreciate its heritage.
+                </p>
+            </div>
+
+            <div class="card-grid">
+
+                <!-- Card 1 -->
+                <article class="culture-card" data-category="celebrations"
+                    data-search="celebrations festivals festival Hermosa Festival Fiesta Pilar Our Lady of the Pillar October 12 Regatta de Zamboanga Dia de la Ciudad June 23 Dia del Chavacano street dancing public events">
+                    <div class="card-visual visual-festival">
+                        <img class="card-image" src="Image/Celebrations.jpg" alt="Community celebration in Zamboanga City" loading="lazy">
+                        <span class="number">01 / FESTIVALS &amp; CELEBRATIONS</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-meta">Festivals &amp; Celebrations</p>
+                        <h3>Festivals of Zamboanga</h3>
+                        <p>
+                            Fiesta Pilar honors Our Lady of the Pillar on
+                            October 12. Regatta de Zamboanga, street dancing,
+                            cultural presentations, and religious activities
+                            bring communities together.
+                        </p>
+                        <div class="card-actions">
+                            <button class="text-link" type="button" data-detail="festival">
+                                Discover festivals <span aria-hidden="true">→</span>
+                            </button>
+                            <a class="card-page-link" href="celebrations.html#hermosa">Celebrations page</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="culture-card" data-category="food"
+                    data-search="food local food A Taste of Zamboanga Curacha spanner crab coconut sauce Tiyula Itum Itum na Tiyula black soup Tausug Satti ta'mu puso Knickerbocker dessert seafood Lokot-Lokot Lokot lokot Tamal Baulu Bawlu Baolo cuisine">
+                    <div class="card-visual visual-food">
+                        <img class="card-image" src="Image/CURACHA.jpg" alt="Curacha crab, a Zamboanga seafood specialty" loading="lazy">
+                        <span class="number">02 / TRADITIONAL FOOD</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-meta">Traditional Food &amp; Cuisine</p>
+                        <h3>A Taste of Zamboanga</h3>
+                        <p>
+                            From coconut-rich Curacha and smoky Tausug
+                            Tiyula Itum to Satti, Knickerbocker, Lokot-Lokot,
+                            Tamal, and Baulu, local foods carry family and
+                            community traditions.
+                        </p>
+                        <div class="card-actions">
+                            <button class="text-link" type="button" data-detail="food">
+                                Explore local food <span aria-hidden="true">→</span>
+                            </button>
+                            <a class="card-page-link" href="local%20food.html">Food page</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="culture-card" data-category="language"
+                    data-search="Chavacano de Zamboanga Chavacano language history origin 17th century Manila Cavite Spanish-based creole Buenos dias Gracias Buenas tardes Como tu Ta ama yo contigo identity everyday phrases creole">
+                    <div class="card-visual visual-language">
+                        <img class="card-image" src="Image/identity.jpg" alt="Community identity in Zamboanga City" loading="lazy">
+                        <span class="number">03 / CHAVACANO</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-meta">Language &amp; Identity</p>
+                        <h3>Chavacano de Zamboanga</h3>
+                        <p>
+                            A distinct Spanish-based creole shaped by contact
+                            among Spanish and Philippine languages, Chavacano
+                            supports everyday communication and Zamboangueño
+                            identity.
+                        </p>
+                        <div class="card-actions">
+                            <button class="text-link" type="button" data-detail="language">
+                                Discover Chavacano <span aria-hidden="true">→</span>
+                            </button>
+                            <a class="card-page-link" href="language.html">Language page</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="culture-card" data-category="heritage"
+                    data-search="Stories in Our Landmarks Fort Pilar Real Fuerza Nuestra Señora del Pilar Zaragoza 1635 Spanish history Taluksangay Mosque 1885 Hadji Abdullah Maas Nuno Zamboanga City Hall Plaza Pershing Pasonanca Park Pettit Barracks heritage landmark">
+                    <div class="card-visual visual-heritage">
+                        <img class="card-image" src="Image/FORT%20PILLAR.jpg" alt="Historic Fort Pilar in Zamboanga City" loading="lazy">
+                        <span class="number">04 / HISTORY</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-meta">History &amp; Historical Landmarks</p>
+                        <h3>Stories in Our Landmarks</h3>
+                        <p>
+                            Fort Pilar, established in 1635, reflects the
+                            city's colonial and religious history. Taluksangay
+                            Mosque, City Hall, Plaza Pershing, Pasonanca Park,
+                            and Pettit Barracks show other parts of its heritage.
+                        </p>
+                        <div class="card-actions">
+                            <button class="text-link" type="button" data-detail="landmarks">
+                                Explore heritage <span aria-hidden="true">→</span>
+                            </button>
+                            <a class="card-page-link" href="History.html">History page</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="culture-card" data-category="traditions"
+                    data-search="Traditions of Zamboanga Made by Tradition arts crafts clothing traditional Yakan weaving Tennun textiles saputangan pis pinantupan Tausug pis siyabit Subanen baskets handicrafts vinta-inspired artwork music dance practices heritage">
+                    <div class="card-visual visual-crafts">
+                        <img class="card-image" src="Image/arts%20and%20craft.jpg" alt="Traditional arts and handcrafted cultural pieces" loading="lazy">
+                        <span class="number">05 / TRADITIONS</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-meta">Traditions, Arts &amp; Cultural Practices</p>
+                        <h3>Traditions of Zamboanga</h3>
+                        <p>
+                            Yakan tennun textiles, Yakan and Tausug garments,
+                            Subanen baskets, and vinta-inspired artwork express
+                            community knowledge and creativity.
+                        </p>
+                        <div class="card-actions">
+                            <button class="text-link" type="button" data-detail="crafts">
+                                Discover traditions <span aria-hidden="true">→</span>
+                            </button>
+                            <a class="card-page-link" href="tradition.html#traditions">Traditions page</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="culture-card" data-category="community"
+                    data-search="Community and Belonging cultural communities identity diversity Chavacano Tausug Sama Yakan Subanen Visayan family gatherings relationships community life respect">
+                    <div class="card-visual visual-customs">
+                        <img class="card-image" src="Image/gathering.jpg" alt="Community members gathered together in Zamboanga City" loading="lazy">
+                        <span class="number">06 / CUSTOMS &amp; COMMUNITY</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-meta">Cultural Communities &amp; Shared Life</p>
+                        <h3>Community and Belonging</h3>
+                        <p>
+                            Chavacano, Tausug, Sama, Yakan, Subanen, Visayan,
+                            and other communities shape Zamboanga's diverse
+                            identity and shared community life.
+                        </p>
+                        <div class="card-actions">
+                            <button class="text-link" type="button" data-detail="customs">
+                                Learn about local customs <span aria-hidden="true">→</span>
+                            </button>
+                            <a class="card-page-link" href="community.html">Community page</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <p class="culture-empty" id="culture-empty" hidden>No culture topics match your search. Try another word or category.</p>
+
+            <dialog class="culture-modal" id="culture-modal" aria-labelledby="culture-modal-title">
+                <div class="culture-modal__header">
+                    <div>
+                        <p class="kicker">Zamboanga Cultural Guide</p>
+                        <h2 id="culture-modal-title"></h2>
+                    </div>
+                    <button class="culture-modal__close" type="button" aria-label="Close details">×</button>
+                </div>
+                <div class="culture-modal__content" id="culture-modal-content"></div>
+                <div class="culture-modal__footer">
+                    <button class="secondary-btn" type="button" data-return-home>Return to Home</button>
+                    <a class="primary-btn" id="culture-modal-link" href="#">Read more</a>
+                    <button class="secondary-btn" type="button" data-close-modal>Close</button>
+                </div>
+            </dialog>
+        </section>
+
+        <!-- Fort Pilar Heritage Feature -->
+        <section class="feature-band" id="heritage">
+            <div class="feature-inner">
+
+                <div class="feature-art">
+                    <iframe
+                        class="feature-video"
+                        src="https://www.youtube-nocookie.com/embed/FadEtQRVvIQ?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=FadEtQRVvIQ&amp;controls=1&amp;playsinline=1&amp;rel=0"
+                        title="Fort Pilar, Zamboanga City"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                    <span class="feature-label">
+                        A landmark of history • Zamboanga City
+                    </span>
+                </div>
+
+                <div class="feature-copy">
+                    <p class="kicker">A closer look at heritage</p>
+
+                    <h2>More than a place. A story we carry.</h2>
+
+                    <p>
+                        Fort Pilar is one of Zamboanga City's best-known historical
+                        and cultural landmarks. Its long history connects the city
+                        to stories of the past, religious devotion, and heritage
+                        preservation.
+                    </p>
+
+                    <div class="feature-points">
+                        <div class="feature-point">
+                            <span class="check">✓</span>
+                            <p>
+                                <strong>Understand the past.</strong>
+                                Learn the background behind important places and
+                                cultural traditions.
+                            </p>
+                        </div>
+
+                        <div class="feature-point">
+                            <span class="check">✓</span>
+                            <p>
+                                <strong>Appreciate different communities.</strong>
+                                Culture is diverse, living, and shared in many ways.
+                            </p>
+                        </div>
+
+                        <div class="feature-point">
+                            <span class="check">✓</span>
+                            <p>
+                                <strong>Help keep traditions alive.</strong>
+                                Learning and respectful curiosity support cultural
+                                appreciation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a class="primary-btn" href="#about">
+                        Learn about our heritage ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="quote-section" id="about">
+            <div class="quote-mark">“</div>
+
+            <blockquote>
+                To understand a place, learn not only where its people live,
+                but also the stories, language, and traditions they carry.
+            </blockquote>
+
+            <p>THE IDEA BEHIND THE ZAMBOANGA CULTURAL GUIDE</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <section class="site-footer__about" aria-label="About this guide">
+                <a class="site-footer__brand" href="#home">
+                    <img src="Image/zm%20city%20logo.jpg" alt="Zamboanga City logo">
+                    <span>
+                        Zamboanga Cultural Guide
+                        <small>Stories • Heritage • Identity</small>
+                    </span>
+                </a>
+                <p class="site-footer__description">
+                    A student-made guide to the culture, history, and living
+                    traditions of Zamboanga City.
+                </p>
+            </section>
+
+            <section aria-label="Project information">
+                <h2 class="site-footer__heading">Project</h2>
+                <p class="site-footer__details">
+                    Web Programming Project<br>
+                    BS Information Technology<br>
+                    Zamboanga City, Philippines
+                </p>
+            </section>
+
+            <nav aria-label="Explore more" class="site-footer__navigation">
+                <h2 class="site-footer__heading">Explore more</h2>
+                <div class="site-footer__links">
+                    <a href="History.html">History</a>
+                    <a href="celebrations.html">Celebrations</a>
+                    <a href="tradition.html">Traditions</a>
+                    <a href="community.html">Community</a>
+                    <a href="local%20food.html">Local Food</a>
+                    <a href="language.html">Chavacano</a>
+                </div>
+            </nav>
+        </div>
+        <div class="site-footer__bottom">
+            &copy; 2026 Zamboanga Cultural Guide.
+        </div>
+    </footer>
+
+</body>
+</html>
