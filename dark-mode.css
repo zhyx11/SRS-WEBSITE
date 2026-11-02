@@ -1,0 +1,394 @@
+:root {
+    color-scheme: light;
+    --background: #f3f6fa;
+    --surface: #ffffff;
+    --text: #172b46;
+    --muted: #64748b;
+    --border: #d8e1ec;
+    --food-paper: #f3f6fa;
+    --food-ink: #172b46;
+    --food-muted: #64748b;
+    --food-border: #d8e1ec;
+    --food-white: #ffffff;
+    --language-paper: #f3f6fa;
+    --language-ink: #172b46;
+    --language-muted: #64748b;
+    --language-border: #d8e1ec;
+    --language-white: #ffffff;
+    --history-paper: #f3f6fa;
+    --history-ink: #172b46;
+    --history-muted: #64748b;
+    --history-border: #d8e1ec;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 9px 12px;
+    border: 1px solid var(--border, #d8e1ec);
+    border-radius: 8px;
+    background: var(--surface, #ffffff);
+    color: var(--text, #172b46);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.theme-toggle:hover {
+    border-color: #f2b84b;
+}
+
+.theme-toggle:focus-visible {
+    outline: 3px solid #f2b84b;
+    outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.theme-toggle__icon--sun {
+    display: none;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --background: #081a30;
+    --surface: #102b49;
+    --text: #e7edf5;
+    --muted: #b6c4d6;
+    --border: #294564;
+    --food-paper: #081a30;
+    --food-ink: #e7edf5;
+    --food-muted: #b6c4d6;
+    --food-border: #294564;
+    --food-white: #102b49;
+    --language-paper: #081a30;
+    --language-ink: #e7edf5;
+    --language-muted: #b6c4d6;
+    --language-border: #294564;
+    --language-white: #102b49;
+    --history-paper: #081a30;
+    --history-ink: #e7edf5;
+    --history-muted: #b6c4d6;
+    --history-border: #294564;
+}
+
+html[data-theme="dark"] .theme-toggle {
+    border-color: #49627c;
+    background: #102b49;
+    color: #f2b84b;
+}
+
+html[data-theme="dark"] .theme-toggle__icon--moon {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-toggle__icon--sun {
+    display: block;
+}
+
+html[data-theme="dark"] body {
+    background: #081a30 !important;
+    color: #e7edf5;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+html[data-theme="dark"] :is(
+    .topbar,
+    .navbar,
+    .food-header,
+    body > header
+) {
+    border-color: #294564;
+    background-color: rgba(12, 35, 62, 0.97);
+}
+
+html[data-theme="dark"] :is(.brand, .food-brand) {
+    color: #f1f5fa;
+}
+
+html[data-theme="dark"] :is(.brand small, .food-brand small) {
+    color: #b6c4d6;
+}
+
+html[data-theme="dark"] :is(.nav-links a, .language-nav a, .food-navigation a, body > header nav a) {
+    color: #e0e8f2;
+}
+
+html[data-theme="dark"] :is(.nav-links.show a, .language-nav.show a) {
+    color: #e0e8f2;
+}
+
+html[data-theme="dark"] :is(.nav-links a:hover, .nav-links a.active, .nav-links a[aria-current="page"],
+.language-nav a:hover, .language-nav a[aria-current="page"], .food-navigation a:hover,
+.food-navigation a[aria-current="page"], body > header nav a:hover) {
+    color: #f2b84b;
+}
+
+html[data-theme="dark"] :is(.menu-btn, .site-menu summary) {
+    border-color: #49627c;
+    background-color: #102b49;
+    color: #f1f5fa;
+}
+
+html[data-theme="dark"] .site-menu__panel {
+    border-color: #294564;
+    background-color: #102b49;
+}
+
+html[data-theme="dark"] .site-menu__panel a {
+    color: #e7edf5;
+}
+
+html[data-theme="dark"] .site-menu__panel a:hover,
+html[data-theme="dark"] .site-menu__panel a:focus-visible {
+    background-color: #1b3a5c;
+    color: #f2b84b;
+}
+
+html[data-theme="dark"] :is(
+    .stat-bar,
+    .section,
+    .feature-band,
+    .tradition-card,
+    .card-content,
+    .detail-container,
+    .detail-content,
+    .music-feature,
+    .celebration-feature,
+    .regatta-section,
+    .event-card,
+    .content-card,
+    .principle,
+    .sources,
+    .highlight,
+    .content-section,
+    .phrase-section,
+    .language-alt,
+    .respect-section,
+    .language-story,
+    .language-summary,
+    .impact-card,
+    .respect-panel,
+    .language-note,
+    .history-note,
+    .phrase-list,
+    .food-introduction,
+    .food-section,
+    .food-card,
+    .food-item,
+    .food-importance,
+    .food-sources,
+    .timeline-section,
+    .timeline-item,
+    .recognition-card,
+    .landmark-card,
+    .gallery-section,
+    .gallery-card
+) {
+    border-color: #294564;
+    background-color: #102b49;
+    color: #e7edf5;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+html[data-theme="dark"] :is(
+    .feature-band,
+    .regatta-section,
+    .highlight,
+    .language-alt,
+    .food-introduction,
+    .food-section
+) {
+    background-color: #0c2340;
+}
+
+html[data-theme="dark"] :is(
+    .section-heading h2,
+    .feature-copy h2,
+    .feature-point strong,
+    .quote-section blockquote,
+    .card-content h3,
+    .card-content p,
+    .detail-content h2,
+    .detail-content h3,
+    .detail-content p,
+    .music-feature h2,
+    .music-feature h3,
+    .music-feature p,
+    .celebration-feature__content h2,
+    .celebration-feature__content > p,
+    .regatta-content h2,
+    .regatta-content > p,
+    .event-card h3,
+    .event-card p,
+    .section-title h2,
+    .content-card h3,
+    .content-card p,
+    .principle h3,
+    .principle p,
+    .sources h2,
+    .sources p,
+    .sources li,
+    .highlight p,
+    .highlight strong,
+    .content-section h2,
+    .content-section h3,
+    .content-section p,
+    .content-section li,
+    .phrase-section h2,
+    .phrase-section h3,
+    .phrase-section p,
+    .phrase-section li,
+    .language-story p,
+    .language-summary p,
+    .impact-card h3,
+    .impact-card p,
+    .respect-panel h2,
+    .respect-panel h3,
+    .respect-panel p,
+    .respect-panel li,
+    .language-note h2,
+    .language-note p,
+    .history-note h3,
+    .history-note p,
+    .phrase-row dt,
+    .phrase-row dd,
+    .food-introduction h2,
+    .food-introduction p,
+    .food-section h2,
+    .food-card h3,
+    .food-card p,
+    .food-item h3,
+    .food-item h4,
+    .food-item p,
+    .food-item li,
+    .food-item strong,
+    .food-importance h3,
+    .food-importance p,
+    .food-sources h3,
+    .food-sources li,
+    .timeline-section h2,
+    .timeline-item h3,
+    .timeline-item p,
+    .recognition-card h3,
+    .recognition-card p,
+    .landmark-card h3,
+    .landmark-card p,
+    .gallery-card figcaption
+) {
+    color: #e7edf5;
+}
+
+html[data-theme="dark"] :is(.kicker, .section-label, .section-title span, .tag, .card-number,
+.food-section-label, .food-eyebrow, .event-card__date, .language-note .section-label) {
+    color: #f2b84b;
+}
+
+html[data-theme="dark"] :is(.intro-text, .intro, .intro-text p, .card-content p, .content-card p,
+.feature-copy > p:not(.kicker), .feature-point p, .food-item__content p, .food-item__content li,
+.food-card__content p, .phrase-row dd, .section-heading > p) {
+    color: #b6c4d6;
+}
+
+html[data-theme="dark"] :is(.culture-search input, input, textarea, select) {
+    border-color: #49627c;
+    background-color: #102b49;
+    color: #f1f5fa;
+}
+
+html[data-theme="dark"] :is(.culture-search input, input, textarea, select)::placeholder {
+    color: #b6c4d6;
+}
+
+html[data-theme="dark"] :is(.culture-filter, .language-list li, .language-alt, .food-card__category,
+.food-tag, .highlight) {
+    border-color: #49627c;
+}
+
+html[data-theme="dark"] .culture-filter {
+    background-color: #102b49;
+    color: #e7edf5;
+}
+
+html[data-theme="dark"] .culture-filter.is-active {
+    background-color: #f2b84b;
+    color: #102b49;
+}
+
+html[data-theme="dark"] .culture-modal {
+    border-color: #49627c;
+    background-color: #102b49;
+    color: #e7edf5;
+}
+
+html[data-theme="dark"] :is(.culture-modal__header h2, .culture-modal__content h3,
+.culture-modal__content p, .culture-modal__content li) {
+    color: #e7edf5;
+}
+
+html[data-theme="dark"] .culture-modal__header {
+    border-bottom-color: #294564;
+}
+
+html[data-theme="dark"] .culture-modal__footer {
+    border-top-color: #294564;
+}
+
+html[data-theme="dark"] .food-item__content strong {
+    color: #f2b84b;
+}
+
+html[data-theme="dark"] .food-card__category {
+    background-color: #1b3a5c;
+    color: #d9e8ff;
+}
+
+html[data-theme="dark"] .food-tag {
+    background-color: #48391c;
+    color: #ffda87;
+}
+
+html[data-theme="dark"] .language-list li {
+    background-color: #102b49;
+}
+
+html[data-theme="dark"] .language-list strong,
+html[data-theme="dark"] .phrase-row dt,
+html[data-theme="dark"] .sources a,
+html[data-theme="dark"] .food-image-credit {
+    color: #9dc5ff;
+}
+
+html[data-theme="dark"] .site-footer {
+    background-color: #061326;
+}
+
+html[data-theme="dark"] .back-to-top {
+    border-color: #f2b84b;
+    background-color: #102b49;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .theme-toggle,
+    html[data-theme="dark"] body,
+    html[data-theme="dark"] :is(.stat-bar, .section, .feature-band, .tradition-card, .content-card,
+    .event-card, .food-card, .food-item, .language-note, .impact-card) {
+        transition: none;
+    }
+}

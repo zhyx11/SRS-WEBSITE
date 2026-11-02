@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="History.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="interactions.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <script src="dark-mode.js" defer></script>
     <script src="interactions.js" defer></script>
     <script src="history.js" defer></script>
 </head>
@@ -35,6 +37,11 @@
 
             <button class="menu-btn" id="menuBtn" type="button" aria-controls="navLinks" aria-expanded="false">
                 <span aria-hidden="true">☰</span> Menu
+            </button>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.7A8.5 8.5 0 0 1 8.3 3.8 8.5 8.5 0 1 0 20.2 15.7Z"></path></svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+                <span class="theme-toggle__label">Theme</span>
             </button>
         </div>
     </header>
